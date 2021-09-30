@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main class='main'>
+        <nav class='navBar'>
+            <h1>Priyanshi Nagpal Portfolio</h1>
+            <div class='navigationMenu'>
+                <a href="#aboutMe">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contactForm">Let's Connect!</a>
+            </div>
+        </nav>
+        <section class='heroSection'>
+            <img class='profileImage' src='C:\Users\DELL\Downloads\priyanshi profile image.jpeg' />
+            <div class='herosectionDetails'>
+                <h1>Priyanshi Nagpal</h1>
+                <h3>To be a Full-Stack Web Developer</h3>
+            </div>
+        </section>
+        <section class='aboutMe' id='aboutMe'>
+            <h1>What I Do...</h1>
+            <p>Some basic details can be added hear regarding what you are realy known for. What you have done in your
+                past job experience. Why do you think you are doing well and more compatible with respect to other users
+                and creators. Some basic details can be added hear regarding what you are realy known for. What you have
+                done in your past job experience. Why do you think you are doing well and more compatible with respect
+                to other users and creators. Some basic details can be added hear regarding what you are realy known
+                for. What you have done in your past job experience. Why do you think you are doing well and more
+                compatible with respect to other users and creators.</p>
+        </section>
+        <section class='skillsAndProjects'>
+            <div class='skills' id='skills'>
+                <h1 class='cardHeading'>Skills</h1>
+                <img title='HTML' src='C:\Users\DELL\Desktop\CS\Web Development\Portfolio Website\images\html.svg'>
+                <img title='CSS' src='C:\Users\DELL\Desktop\CS\Web Development\Portfolio Website\images\css.svg'>
+                <img title='Javascript'
+                    src='C:\Users\DELL\Desktop\CS\Web Development\Portfolio Website\images\javascript.svg'>
+                <img title='Node.JS'
+                    src='C:\Users\DELL\Desktop\CS\Web Development\Portfolio Website\images\node.js.svg'>
+                <img title='React' src='C:\Users\DELL\Desktop\CS\Web Development\Portfolio Website\images\react.svg'>
+                <img title='Java' src='C:\Users\DELL\Desktop\CS\Web Development\Portfolio Website\images\java.svg'>
+                <img title='C++' src='C:\Users\DELL\Desktop\CS\Web Development\Portfolio Website\images\c++.svg'>
+                <img title='C' src='C:\Users\DELL\Desktop\CS\Web Development\Portfolio Website\images\c.svg'>
+            </div>
+            <div class='projects' id='projects'>
+                <h1 class='cardHeading'>Projects</h1>
+                <div class='projectContainer'>
+                    <img src='./images/css.svg' />
+                    <div class='projectDescription'>
+                        <h4>Project Name</h4>
+                        <p>Some details of the project.Some details of the project.Some details of the project.</p>
+                    </div>
+                </div>
+                <div class='projectContainer'>
+                    <img src='./images/css.svg' />
+                    <div class='projectDescription'>
+                        <h4>Project Name</h4>
+                        <p>Some details of the project</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='contactForm' id='contactForm'>
+            <h1>Let's Connect!</h2>
+                <div class='formGroup'>
+                    <label for='name'>Enter Full Name</label><br />
+                    <input type='text' id='name' placeholder='Full Name' />
+                </div>
+                <div class='formGroup'>
+                    <label for='email'>Email</label><br />
+                    <input type='text' id='email' placeholder='Email' />
+                </div>
+                <div class='formGroup'>
+                    <label for='message'>Message</label><br />
+                    <textarea placeholder="Send some message!" id="message" name="w3review" rows="4"
+                        cols="50"></textarea>
+                </div>
+                <button class='submitButton' onClick={submit()}>Connect</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
